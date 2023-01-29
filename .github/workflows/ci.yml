@@ -2,7 +2,7 @@
 name: End-to-end tests 🧪 # criado 
 on: [push] #qualquer push ou qualquer bransh vai desparar ele
 jobs:
-  cypress-run:
+  cypress-open:
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
