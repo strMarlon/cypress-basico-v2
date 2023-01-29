@@ -157,7 +157,7 @@ describe('Central de Atendimento ao Cliente TAT', ()=> {
         cy.get('#privacy a').should('have.attr', 'target', '_blank')// tem o atributo target com o valor blank ?
     })
     //18
-    it.only('acessa a página da política de privacidade removendo o target e então clicando no link',()=>{
+    it('acessa a página da política de privacidade removendo o target e então clicando no link',()=>{
         cy.get('#privacy a')
             .should('have.attr', 'target', '_blank')
             .invoke('removeAttr', 'target')//remove o target fazendo com que abra o link na mesma pagina 
